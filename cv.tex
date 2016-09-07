@@ -4,7 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \usepackage{graphicx,wrapfig}
-
+\usepackage{enumitem}
 \renewcommand{\arraystretch}{1.5}
 
 \begin{document}
@@ -28,15 +28,14 @@
 
 { \Large \textbf{Personal Details:}\\
 }
-\begin{itemize}\addtolength{\leftskip}{8mm}
-
-	\item \textbf{\emph{Name :}} Kritish Pahi
-	\item \textbf{\emph{Address :}} Kamalbinayak -5, Bhaktapur
-	\item \textbf{\emph{Gender :}} Male
-	\item \textbf{\emph{Marital Status :}} Unmarried
-	\item \textbf{\emph{Date of birth :}} 29 June 1995
-	\item \textbf{\emph{Religion :}} Hinduism
-\end{itemize}
+\begin{tabular}{l l}
+	 \textbf{\emph{Name :}} & Kritish Pahi \\
+	 \textbf{\emph{Address :}}&  Kamalbinayak -5, Bhaktapur \\
+	 \textbf{\emph{Gender :}} & Male \\
+	 \textbf{\emph{Marital Status :}} & Unmarried \\ 
+	 \textbf{\emph{Date of birth :}} & 29 June 1995 \\ 
+	 \textbf{\emph{Religion :}} & Hinduism \\ 
+\end{tabular}
 \vspace{8mm}
 
 {\Large \textbf{Objective:} \\
@@ -70,7 +69,9 @@ and flexible.
 \vspace{8mm}
 {\Large \textbf{Areas of Interest:} \\
 }
-\begin{itemize}\addtolength{\leftskip}{8mm}	
+\vspace{-5mm}
+\begin{itemize}[noitemsep]
+\addtolength{\leftskip}{8mm}	
 	\item Computer Networks
 	\item Software Enginnering
 	\item Web Development
@@ -80,7 +81,9 @@ and flexible.
 \vspace{8mm}
 {\Large \textbf{Personal Skills and Strengths:}\\
 }
-\begin{itemize}\addtolength{\leftskip}{8mm}
+\vspace{-5mm}
+\begin{itemize}[noitemsep]
+\addtolength{\leftskip}{8mm}
 	\item Willingness to Learn
 	\item Leadership quality
 	\item Ability to be a good team player
@@ -92,7 +95,9 @@ and flexible.
 
 {\Large \textbf{Projects Done:} \\
 }
+\vspace{-5mm}
 \begin{itemize}
+
 	\item \textbf{Pacman } \emph{(2014)} \\
 		\small An old, classic and popular game with Artificial Intelligence
 		chasing by the ghost. Also in two player mode. C++, SDL
@@ -118,8 +123,10 @@ and flexible.
 		using Natual Language Processing. Python, Wiki-scraping, NER
 \end{itemize}
 
+\vspace{8mm}
 {\Large \textbf{ Training and Achievements: }\\ }
 %\large \textbf{Training}
+\vspace{-5mm}
 \begin{itemize}
 	\item  Participated in Crash Courses on AVR Training (2014), Windows 
 	App Developement (2014)
